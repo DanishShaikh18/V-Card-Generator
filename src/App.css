@@ -1,16 +1,5 @@
 /* src/App.css */
-html, body {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-    overflow-x: hidden; /* Ensure no horizontal overflow */
-    box-sizing: border-box;
-    zoom: 100%; /* Ensure zoom is set to 100% */
-    transform: none; /* Reset any accidental transforms */
-}
-
 .App {
-    max-width: 100vw; /* Prevents content from exceeding viewport width */
-    overflow: hidden; /* Prevents scroll bars if there’s any overflow */
+    zoom: 0.8; /* 80% scale */
+    overflow: hidden; /* Prevent scroll bars */
 }
