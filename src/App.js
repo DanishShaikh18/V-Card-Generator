@@ -2,7 +2,6 @@
 import React from 'react';
 import Header from './Componenets/Header'
 import TitleContainer from './Componenets/TitleContainer'
-import FormComponent from './Componenets/FormComponent';
 import MainComponent from './Componenets/MainComponent'
 import Footer from './Componenets/Footer'
 
@@ -29,7 +28,7 @@ function App() {
 
         <Header />
         <TitleContainer />
-        {/* <FormComponent /> */}
+       
         <MainComponent />
         {/* Other components like the button and QR code box will go here */}
         <Footer />
