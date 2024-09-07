@@ -8,7 +8,7 @@ import Footer from './Componenets/Footer';
 function App() {
   return (
     // Wrapper div that takes full screen height and width on large screens
-    <div className="lg:h-screen lg:w-screen flex justify-center items-center">
+    <div className="lg:h-screen lg:w-screen">
       <div className="App w-full h-full"> {/* Adjust styles for responsiveness */}
         {/* Container for positioning the styling image */}
         <div className="relative">
