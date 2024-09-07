@@ -1,1 +1,24 @@
 
+/* src/App.css */
+
+.App {
+    overflow-x: hidden; /* Ensures no horizontal scrollbars */
+  }
+  
+  @media (min-width: 1024px) { /* Target screens larger than 1024px */
+    .App {
+      transform: scale(0.85); /* Scale down for larger screens */
+      transform-origin: top center; /* Keep scaling centered */
+      width: 117.65%; /* Adjust width to counter the horizontal scaling effect */
+      height: 117.65%; /* Adjust height to counter the vertical scaling effect */
+    }
+  }
+  
+  @media (min-width: 1280px) { /* Adjust for even larger screens if needed */
+    .App {
+      transform: scale(0.9); /* Slightly less scaling for larger screens */
+      width: 111.11%; /* Further adjust width */
+      height: 111.11%; /* Further adjust height */
+    }
+  }
+  
