@@ -4,7 +4,7 @@ import Header from './Componenets/Header'
 import TitleContainer from './Componenets/TitleContainer'
 import MainComponent from './Componenets/MainComponent'
 import Footer from './Componenets/Footer'
-import './App.css'
+
 
 
 function App() {
