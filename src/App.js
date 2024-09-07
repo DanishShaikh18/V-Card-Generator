@@ -1,40 +1,37 @@
 // src/App.js
 import React from 'react';
-import Header from './Componenets/Header';
-import TitleContainer from './Componenets/TitleContainer';
-import MainComponent from './Componenets/MainComponent';
-import Footer from './Componenets/Footer';
+import Header from './Componenets/Header'
+import TitleContainer from './Componenets/TitleContainer'
+import MainComponent from './Componenets/MainComponent'
+import Footer from './Componenets/Footer'
+
 
 function App() {
   return (
-    <div
-      className="App"
-      style={{
-        transform: 'scale(0.8)', // Scale down to 80%
-        transformOrigin: 'top left', // Adjust the origin to keep it anchored
-        width: '125%', // Adjust width to counter the scaling effect horizontally
-        height: '125%', // Adjust height to counter the scaling effect vertically
-        overflow: 'hidden' // Ensure no overflow from scaling
-      }}
-    >
+    <div className="App">
+      {/* Container for positioning the styling image */}
       <div className="relative">
+        {/* Desktop-only Styling Image */}
         <img
-          src="/images/style_image.png"
+          src="/images/style_image.png" // Ensure this path is relative to the public directory
           alt="Styling Decoration"
           style={{
             width: '100px',
-            height: '540px',
+            height: '540px', // Adjust height calculation to fit new top position
             position: 'absolute',
-            top: '190px',
-            left: '0',
-            transform: 'rotate(0)',
-            zIndex: -1
+            top: '190px', // Increase this value to push the image container lower
+            left: '0', // Fixed to the left side
+            transform: 'rotate(0)', // Rotation transformation
+            zIndex: -1 // Ensures it stays in the background
           }}
-          className="hidden lg:block"
+          className="hidden lg:block" // Ensure this is only visible on larger screens
         />
+
         <Header />
         <TitleContainer />
+       
         <MainComponent />
+        {/* Other components like the button and QR code box will go here */}
         <Footer />
       </div>
     </div>
